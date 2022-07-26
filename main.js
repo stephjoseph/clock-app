@@ -93,7 +93,7 @@ function getTimezone() {
 }
 
 function getLocation() {
-  fetch('http://ip-api.com/json/')
+  fetch('https://ip-api.com/json/')
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('.clock-location__city').innerHTML = data.city;
