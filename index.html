@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clock App</title>
+  </head>
+  <body>
+    <h1 class="heading-h1">Clock App</h1>
+    <div class="background background--night"></div>
+    <main class="main">
+      <div class="quotes">
+        <div class="quotes__quote-container">
+          <p class="quotes__quote"></p>
+          <div class="quotes__author"></div>
+        </div>
+        <button type="button" class="quotes__btn">
+          <img
+            class="quotes__btn-icon"
+            src="./assets/desktop/icon-refresh.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="clock">
+        <div class="clock-greeting">
+          <div class="clock-greeting__icon-container">
+            <img
+              class="clock-greeting__icon"
+              src="./assets/desktop-icon-moon.svg"
+              alt=""
+            />
+          </div>
+          <div class="clock-greeting__greeting">
+            <span>Good evening</span
+            ><span class="clock-greeting__currently">, it's currently</span>
+          </div>
+        </div>
+        <div class="clock-time">
+          <div class="clock-time__time">23:14</div>
+          <div class="clock-time__timezone">BST</div>
+        </div>
+        <div class="clock-location">
+          <div>in</div>
+          <div class="clock-location__location">
+            <span class="clock-location__city">LONDON</span>,
+            <span class="clock-location__country-code">UK</span>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="toggle-btn">
+        <div class="toggle-btn__text">More</div>
+        <div class="toggle-btn__icon-container">
+          <img
+            class="toggle-btn__icon"
+            src="./assets/desktop/icon-arrow-down.svg"
+            alt=""
+          />
+        </div>
+      </button>
+    </main>
+    <div class="additional-info">
+      <div class="additional-info__divider"></div>
+      <div class="additional-info__container">
+        <div class="additional-info__title">Current timezone</div>
+        <div class="additional-info__info additional-info__timezone">
+          Europe/London
+        </div>
+      </div>
+      <div class="additional-info__container">
+        <div class="additional-info__title">Day of the Year</div>
+        <div class="additional-info__info additional-info__doty">295</div>
+      </div>
+      <div class="additional-info__container">
+        <div class="additional-info__title">Day of the Week</div>
+        <div class="additional-info__info additional-info__dotw">5</div>
+      </div>
+      <div class="additional-info__container">
+        <div class="additional-info__title">Week Number</div>
+        <div class="additional-info__info additional-info__week-number">42</div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
